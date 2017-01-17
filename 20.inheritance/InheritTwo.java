@@ -1,4 +1,4 @@
-//© A+ Computer Science
+// A+ Computer Science
 // www.apluscompsci.com
 
 //inheritance example
@@ -28,17 +28,16 @@ class Monster
 class Witch extends Monster
 {	
 	//how does Witch work if it has no code?
-
-	
+    
+	//Witch extends all accesible methods and data from class Monster and Object
 	
 }
 
 //make a new type of Monster - Sasquatch 
-
-
-
-
-
+class Sasquatch extends Monster
+{
+    
+}
 
 public class InheritTwo
 {
@@ -51,7 +50,8 @@ public class InheritTwo
      out.println(witch);
      
      //instantiate Sasquatch
-     
+     Sasquatch sasquatch = new Sasquatch();
+     out.println(sasquatch);
      
   }
 }
