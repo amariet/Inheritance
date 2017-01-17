@@ -1,4 +1,4 @@
-//© A+ Computer Science
+// A+ Computer Science
 // www.apluscompsci.com
 
 //inheritance public private protected example
@@ -41,7 +41,7 @@ class Witch extends Monster
 
 	public Witch( String name, int age )
 	{
-		//what code should be here
+		super(name, age);
 	}
 
 	public void showPrivate()
