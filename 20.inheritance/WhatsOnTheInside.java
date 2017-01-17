@@ -1,4 +1,4 @@
-//© A+ Computer Science
+// A+ Computer Science
 // www.apluscompsci.com
 
 //inheritance example
@@ -11,7 +11,7 @@ class Monster
 
 	public Monster()
 	{
-		//myName = "Monster";    //uncomment and recompile and run
+		myName = "Monster";    //uncomment and recompile and run
 	}
 
 	public Monster( String name )
@@ -23,6 +23,54 @@ class Monster
 	{
 		return myName;
 	}
+}
+
+class Vampire extends Monster
+{
+    public Vampire()
+    {
+    }
+    
+    public Vampire(String name)
+    {
+    }
+}
+
+class GoodVampire extends Vampire
+{
+   public GoodVampire()
+   {
+       
+   }
+   
+   public GoodVampire( String name )
+   {
+ 	  
+   }
+}
+
+class BoogieMan extends Monster
+{
+    public BoogieMan()
+    {
+    }
+    
+    public BoogieMan(String name)
+    {
+    }
+} 
+
+class BadBoogieMan extends BoogieMan
+{
+   public BadBoogieMan()
+   {
+       
+   }
+   
+   public BadBoogieMan( String name )
+   {
+
+   }
 }
 
 class Witch extends Monster
@@ -41,7 +89,10 @@ class Witch extends Monster
 class GoodWitch extends Witch
 {
    //what do we need here??
-   
+   public GoodWitch()
+   {
+       
+   }
    
    public GoodWitch( String name )
    {
@@ -58,5 +109,17 @@ public class WhatsOnTheInside
 		
 		GoodWitch witch = new GoodWitch("Harriet");
 		out.println(witch);
+		
+		GoodVampire good = new GoodVampire();
+		out.println(good);
+		
+		GoodVampire vampire = new GoodVampire("Dracula");
+		out.println(vampire);
+		
+		BadBoogieMan okay = new BadBoogieMan();
+		out.println(okay);
+		
+		BadBoogieMan boogieMan = new BadBoogieMan("Oogie Boogie"); 
+		out.println(boogieMan);
 	}
 }
